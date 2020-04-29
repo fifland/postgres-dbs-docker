@@ -2,6 +2,10 @@
 
 ## How to use
 
+First of all clone this repository using `git clone https://github.com/fmuenscher/postgres-dbs-docker.git` in your desired folder.
+
+Mind that most Linux Distributions come with git preinstalled. If not, or if you are using Windows or mac, you need to install git first or simply download the repository as [ZIP](https://github.com/fmuenscher/postgres-dbs-docker/archive/master.zip).
+
 ### Linux
 
 1. Install docker with the corresponding file in the `install docker` directory.
