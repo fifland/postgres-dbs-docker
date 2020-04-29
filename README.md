@@ -1,6 +1,6 @@
 # Docker deployment of PgSQL and pgAdmin4 for DBS
 
-## How to use
+## How to Start
 
 First of all clone this repository using `git clone https://github.com/fmuenscher/postgres-dbs-docker.git` in your desired folder.
 
@@ -48,3 +48,37 @@ Mind that most Linux Distributions come with git preinstalled. If not, or if you
 1. Open [http://localhost:9000](http://localhost:9000) in your browser and log into pgAdmin4
 1. Work with the database :)
 1. To stop the system just press `Ctrl` + `C` in the terminal the system is running in.
+
+## Connect pgAdmin4 to PostgresDB
+
+First log into pgAdmin4
+
+![Cannot load image!](img/login.png)
+
+After the login right click `Server` and select `Create` -> `Server...`
+
+![Cannot load image!](img/create-menu.png)
+
+Give that Server a name :D and select `Connection`
+
+![Cannot load image!](img/create-name.png)
+
+Enter `db` as Host, `postgres` as user and your postgres password. Don't forget to select `Save password?`. Then click `Save`
+
+![Cannot load image!](img/create-conn.png)
+
+Now you are back to the main page. Here right click `DBS` -> `Databases` and select `Create` -> `Database`
+
+![Cannot load image!](img/db-menu.png)
+
+Of course your new db needs a name! Select a fitting one ;) Then click on `Save` once more.
+
+![Cannot load image!](img/db-name.png)
+
+Now you need to open the Query tool. Therefore select `Tools` -> `Query Tool`
+
+![Cannot load image!](img/db-qt.png)
+
+Here you can simply paste the content of an `.sql` file and press `Play`. If it returns successfully, you have created your first Database :D
+
+![Cannot load image!](img/db-seed.png)
