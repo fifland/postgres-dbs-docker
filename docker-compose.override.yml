@@ -1,0 +1,12 @@
+services:
+
+  db:
+    environment:
+      # Here you can set the database for the main Postgres database server. Username is "postgres"
+      POSTGRES_PASSWORD: Datenbanksysteme
+  
+  pgadmnin:
+    environment: 
+      # Configure the login information for pgAdmin4. You will need it to log into pgAdmin4
+      PGADMIN_DEFAULT_EMAIL: your.name@mni.thm.de
+      PGADMIN_DEFAULT_PASSWORD: Datenbanksysteme
